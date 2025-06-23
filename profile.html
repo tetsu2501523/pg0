@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <title>profile</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Slabo+13px&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <nav class="side">
+                <ul>
+                    
+                    <li><a href="home.html">home</a></li>
+
+                    <li><a href="jimoto.html">home town</a></li>
+                    
+                    <li><a href="hobby.html">hobby</a></li>
+                    
+                    <li><a href="favanime.html">fav anime</a></li>
+                    
+                    <li><a href="favmusic.html">musics</a></li>
+
+                    <li><a href="contact.html">contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <p class="title">profile</p>
+        <div class="profile">
+            <div class="name">
+                <p><h1>ZAW MIN HTET</h1>
+                <strong>(テツ)</strong></p>
+                
+                <p>*ミャ ン マー 出 身*</p>
+                <p>*情 報 工 学 科 1 年 E 組*</p>
+                <p>*A I & I O T 専 攻*</p>
+                <p>*素 人*</p>
+                <p>よ ろ し く！</p>
+                
+            </div>
+            <img src="img/ngapone.jpg" alt="mypic">
+        </div>
+        <script>
+            const video = document.querySelector('.container video');
+
+            document.querySelector('.container').addEventListener('mouseenter', () => {
+            video.play();
+            });
+
+            document.querySelector('.container').addEventListener('mouseleave', () => {
+            video.pause();
+            video.currentTime = 0; 
+            });
+        </script>
+
+    </body>
+
+</html>
