@@ -137,18 +137,19 @@ li:hover{
 .profile .name{
     padding: 10px;
 }
-.profile img{
+.profile video{
     height: 450px;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 20px;
     object-fit: cover;
-    overflow: hidden;
+    transition: transform 0.5s ease;
     transition: transform 0.5s ease-in-out;
 }
-.profile img:hover{
+
+.profile video:hover{
+    opacity: 1;
     transform: scale(1.2);
-    border-radius: 30px;
-    
+    border-radius: 20px;
 }
 /*home town page*/
 .container{
@@ -174,7 +175,7 @@ li:hover{
     height: 450px;
     width: 55%;
     padding: 20px;
-    object-fit: cover;
+    object-fit: fill;
     overflow: hidden;
     transition: transform 0.5s ease-in-out;
 }
@@ -214,7 +215,8 @@ li:hover{
     color: black;
     width: 30%;
     height: 50%;
-    margin-right: 50%;
+    margin-left: 300px;
+    margin-right: auto;
     margin-top: 200px;
     margin-bottom: 50px;
     padding: auto;
@@ -223,7 +225,7 @@ li:hover{
     letter-spacing: 10px;
     border-radius: 10px;
 }
-.container .three{
+.container3 .three{
     padding: 10px;
     font-size: 30px;
 }
@@ -240,4 +242,36 @@ li:hover{
 .container3 img:hover{
     transform: scale(1.1);
     border-radius: 30px;
+}
+.container4{
+    background-color: rgba(255, 255, 255, 0.5);
+    color: black;
+    width: 40%;
+    height: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px;
+    margin-bottom: auto;
+    padding: auto;
+    text-align: center;
+    letter-spacing: 3px;
+    text-indent: 30px;
+    line-height: 60px;
+    font-size: 25px;
+    border-radius: 10px;
+}
+.sns{
+    position: relative;
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.459);
+    
+    width: 12%;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.sns img{
+    padding: auto;
+    height: 100px;
+    justify-content: space-around;
 }
