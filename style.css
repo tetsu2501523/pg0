@@ -10,8 +10,6 @@ body{
     font-weight: 400;
     font-style: normal;
 }
-
-
 .side{
     position: fixed;
     right: 0;
@@ -56,7 +54,7 @@ nav a{
     font-size: 25px;
     padding: 0 10px;
 }
-a::after{
+nav a::after{
     content: "";
     position: absolute;
     background-color: #ff7e7e;
@@ -66,13 +64,13 @@ a::after{
     bottom: -5px;
     transition: 0.3s;
 }
-a:hover::after{
+nav a:hover::after{
     width: 100%;
 }
-a:hover{
+nav a:hover{
     color: black;
 }
-li::after{
+nav li::after{
     content: "";
     position: absolute;
     background-image: url('img/pngegg.png');
@@ -85,10 +83,10 @@ li::after{
     left: 35px;
     transition: 0.1s;
 }
-li:hover::after{
+nav li:hover::after{
     opacity: 1;
 }
-li:hover{
+nav li:hover{
     background-color: #ffffffcc;
 }
     .text{
@@ -105,6 +103,16 @@ li:hover{
         h1{
             font-size: 100px;
         }
+        opacity: 0;
+        transform: translateY(20px);
+        animation: fadeInUp 1s ease-out forwards;
+        animation-delay: 0.3s;
+}
+@keyframes fadeInUp{
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 .title{
     font-size: 50px;
@@ -133,6 +141,16 @@ li:hover{
     line-height: 60px;
     font-size: 25px;
     border-radius: 10px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease-out forwards;
+    animation-delay: 0.3s;
+}
+@keyframes fadeInUp{
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 .profile .name{
     padding: 10px;
@@ -151,6 +169,9 @@ li:hover{
     transform: scale(1.2);
     border-radius: 20px;
 }
+li{
+    list-style-type: none;
+}
 /*home town page*/
 .container{
     background-color: rgba(255, 255, 255, 0.5);
@@ -166,6 +187,16 @@ li:hover{
     letter-spacing: 10px;
     display: flex;
     border-radius: 10px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease-out forwards;
+    animation-delay: 0.3s;
+}
+@keyframes fadeInUp{
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 .container .one{
     padding: 10px;
@@ -175,7 +206,7 @@ li:hover{
     height: 450px;
     width: 55%;
     padding: 20px;
-    object-fit: fill;
+    object-fit: cover;
     overflow: hidden;
     transition: transform 0.5s ease-in-out;
 }
@@ -204,6 +235,10 @@ li:hover{
         overflow: hidden;
         transition: transform 0.5s ease-in-out;
     }
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease-out forwards;
+    animation-delay: 0.3s;
 }
 .container2 img:hover{
     transform: scale(1.05);
@@ -224,6 +259,10 @@ li:hover{
     line-height: 60px;
     letter-spacing: 10px;
     border-radius: 10px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease-out forwards;
+    animation-delay: 0.3s;
 }
 .container3 .three{
     padding: 10px;
@@ -243,6 +282,7 @@ li:hover{
     transform: scale(1.1);
     border-radius: 30px;
 }
+/**/
 .container4{
     background-color: rgba(255, 255, 255, 0.5);
     color: black;
@@ -250,7 +290,7 @@ li:hover{
     height: 60%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 200px;
+    margin-top: 150px;
     margin-bottom: auto;
     padding: auto;
     text-align: center;
@@ -259,19 +299,49 @@ li:hover{
     line-height: 60px;
     font-size: 25px;
     border-radius: 10px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease-out forwards;
+    animation-delay: 0.3s;
 }
+/*contact page*/
 .sns{
-    position: relative;
     display: flex;
-    background-color: rgba(255, 255, 255, 0.459);
-    
+    text-decoration: none;
     width: 12%;
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
 }
+.sns .fbig{
+    display: flex;
+}
+.sns .disc img{
+    height: 60px;
+    margin-top: 20px;
+    margin-left: 20px;
+    padding: 2%;
+    transition: transform 0.5s ease-in-out;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease-out forwards;
+    animation-delay: 0.3s;
+}
 .sns img{
     padding: auto;
     height: 100px;
     justify-content: space-around;
+    transition: transform 0.5s ease-in-out;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease-out forwards;
+    animation-delay: 0.3s;
 }
+.sns img:hover{
+    transform: scale(1.5);
+    
+}
+.sns .disc img:hover{
+   transform: scale(1.5);
+}
+
