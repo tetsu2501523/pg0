@@ -312,6 +312,11 @@ li{
     margin-top: 20px;
     margin-left: 55%;
     margin-right: auto;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease-out forwards;
+    animation-delay: 0.3s;
+
 }
 .sns .fbig{
     display: flex;
@@ -322,20 +327,15 @@ li{
     margin-left: 20px;
     padding: 2%;
     transition: transform 0.5s ease-in-out;
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeInUp 1s ease-out forwards;
-    animation-delay: 0.3s;
+    
 }
+
 .sns img{
     padding: auto;
     height: 100px;
     justify-content: space-around;
     transition: transform 0.5s ease-in-out;
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeInUp 1s ease-out forwards;
-    animation-delay: 0.3s;
+    
 }
 .sns img:hover{
     transform: scale(1.5);
